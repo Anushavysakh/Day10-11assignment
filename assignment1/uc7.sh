@@ -20,5 +20,6 @@ declare -a array
 index=0
 for i in ${!Compute_dict[@]}
 do
-	array[index]=${Compute_dict[$i]}
+	array[index++]=${Compute_dict[$i]}
 done
+
